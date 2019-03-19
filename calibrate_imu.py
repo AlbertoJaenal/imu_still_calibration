@@ -1,3 +1,26 @@
+'''
+/*****************************************************************************
+**         IMU still calibration for intrinsic parameter estimation         **
+******************************************************************************
+**                                                                          **
+**  Copyright(c) 2019, Alberto Jaenal Galvez, University of Malaga          **
+**  Copyright(c) 2019, MAPIR group, University of Malaga                    **
+**                                                                          **
+**  This program is free software: you can redistribute it and/or modify    **
+**  it under the terms of the GNU General Public License (version 3) as     **
+**  published by the Free Software Foundation.                              **
+**                                                                          **
+**  This program is distributed in the hope that it will be useful, but     **
+**  WITHOUT ANY WARRANTY; without even the implied warranty of              **
+**  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the            **
+**  GNU General Public License for more details.                            **
+**                                                                          **
+**  You should have received a copy of the GNU General Public License       **
+**  along with this program.  If not, see <http://www.gnu.org/licenses/>.   **
+**                                                                          **
+*****************************************************************************/
+'''
+
 import os
 import numpy as np
 import time
