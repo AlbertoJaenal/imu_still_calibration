@@ -4,12 +4,21 @@ Inertial measurements can be used for a various applications, as pure inertial o
 
 This repository contains a calibration tool based on **Python** for IMUs, following the model presented in [The TUM VI Benchmark for Evaluating Visual-Inertial Odometry](https://arxiv.org/pdf/1804.06120.pdf). The tool models the bias and random walk parameters of a still IMU through Allan Variances, and then estimates them. For a sufficient calibration, it is recommended to store measures during large periods of time (> 80 h).
 
-If you use this code in your research, we would appreciate if you cite the respective publication.
+If you use this code in your research, we would appreciate if you cite the respective [[publication](https://mapir.uma.es/papersrepo/2020/2020_The_UMA-VI_dataset_Visual%e2%80%93inertial_odometry_in_low-textured_and_dynamic_illumination_environments.pdf)]:
 
-**A Dataset for Visual Inertial Odometry in Challenging Environments with Low-texture and HDR Illuminations**
-(D. Zuñiga-Noël, A. Jaenal, R. Gomez-Ojeda, J Gonzalez-Jimenez),
-*In *, .
-[[pdf]()]
+
+```
+@article{zuniga2020vi,
+  title={The UMA-VI dataset: Visual--inertial odometry in low-textured and dynamic illumination environments},
+  author={Zu{\~n}iga-No{\"e}l, David and Jaenal, Alberto and Gomez-Ojeda, Ruben and Gonzalez-Jimenez, Javier},
+  journal={The International Journal of Robotics Research},
+  volume={39},
+  number={9},
+  pages={1052--1060},
+  year={2020},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+```
 
 # Usage
 
@@ -90,6 +99,8 @@ gyroscope_random_walk: 9.798339194666108e-07 #Bias random walk
 rostopic: /imu0/data #the IMU ROS topic
 update_rate: 250.0 #Hz (for discretization of the values above)
 ```
+
+Due to space constraints, the .npy file for the UMA-VI dataset is only available on request.
 
 ### TUM Visual Inertial Dataset IMU Calibration
 
